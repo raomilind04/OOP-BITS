@@ -25,6 +25,8 @@ public class Feb3 {
 		// Default constructor exist 
 		// (.) after object to access variables and methods
 		
+		// Class Access  => package private and public
+		// Member Access => Private , Package , Protected , Public
 		
 		// CODE 1
 //		Maruthi ciaz = new Maruthi(); 
