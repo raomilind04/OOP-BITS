@@ -142,6 +142,22 @@ public class BeforeFeb3 {
 //		System.out.println(a); 
 //		System.out.println("a: "+a+" b: "+b+" c: "+c+" i: "+i); 
 		
+		// Arrays
+		// data_type[] name or data_type name[] => only creates the reference and not the actual array itself
+		// name = new data_type[size]
+		// In case of primitive data types, the actual values are stored in contiguous memory locations
+		// 2D arrays => rows are allowed to vary in length
+		// For a multidimensional array, we only need to specify the size for the first (leftmost) dimension
+		
+		
+		
+	
+//		String[][] names = { {"Mr. ", "Mrs. ", "Ms. "},{"Manish" , "Meeta"}}; 
+//		System.out.println(names[0][0] + names[1][0]);
+//		System.out.println(names[0][2] + names[1][1]);
+		
+
+		
 	}
 	
 }
