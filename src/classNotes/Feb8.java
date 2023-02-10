@@ -23,7 +23,12 @@ public class Feb8 {
 
 	public static void main(String[] args) {
 		
+		
+		
 		 // GARBAGE COLLECTION
+		
+		
+		
 		
 		// Java handles de-alloc using garbage collection
 		// No reference to an object => Garbage
@@ -56,6 +61,7 @@ public class Feb8 {
 //		System.out.println(Car.sum); // ans = 6
 		
 		// 
+		
 	}
 
 }

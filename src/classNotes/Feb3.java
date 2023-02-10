@@ -17,7 +17,12 @@ public class Feb3 {
 		// Constructor : className(params) , no return type , access type is same as class
 		// Method : same rules are main
 		
+		
+		
 		// OBJECTS
+		
+		
+		
 		// className objectName ; => does not define only refers (objectName contains NULL)
 		// new  : dynamically allocate at run time. 
 		// objectName  = new className(); -> envoke a constructor
