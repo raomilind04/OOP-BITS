@@ -13,6 +13,7 @@ class B {
 	}
 	
 	static class B1{
+		@SuppressWarnings("static-access")
 		public void display() {
 			
 			
@@ -28,6 +29,7 @@ class B {
 			System.out.println("w: " + w); 
 			System.out.println("x: " + oob.x); 
 			
+			// This gives an warning
 			oob.w = 33; 	//print 33 for both inner and outter class
 			oob.x = 10; 
 			System.out.println("w: " + oob.w); 
