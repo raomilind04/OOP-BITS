@@ -1,5 +1,22 @@
 package classNotes;
 
+
+class Clone1{
+	int x; 
+	int y; 
+}
+
+class Clone2 implements Cloneable {
+	int a;
+    int b;
+    Clone1 c = new Clone1(); 
+    public Object clone() throws CloneNotSupportedException {
+    	return super.clone(); 
+    }
+}
+
+
+
 class Class1{
 	
 	String name ;
