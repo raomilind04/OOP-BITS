@@ -1,5 +1,6 @@
 package classNotes;
 
+
 class Parent{
 	
 	int x = 2; 
@@ -52,6 +53,7 @@ public class Mar3 {
 		// p.display3();	// ERROR -> Can not access child methods from parents. 
 		
 		
+		// 
 	}
 
 }
