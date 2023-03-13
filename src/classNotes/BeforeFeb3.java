@@ -36,15 +36,15 @@ public class BeforeFeb3 {
 //		counter c3 = new counter(); 
 		
 		
-		// Java is strongly typed language , assign float to int will give error unlike c and c++ which are strongly typed languages.
-		
+		// Java is strongly typed language , assign float to int will give error. 
 //		int i ; 
 //		i = 3.0 ; 
 //		//gives error => Type mismatch: cannot convert from double to int
 		
 		
 		// Java uses uni-code for chars
-		// String objects are immutable
+		// unicode -> 16 bits. 
+		// String objects are immutable but the reference var is immutable. 
 		// from java.lang.String
 		// int dec = 123; 
 		// int oct = 0123; 
@@ -93,6 +93,17 @@ public class BeforeFeb3 {
 		
 		// narrowing conversion has to be type casted, 
 		// int i  , byte b => b = (int) i but i = b can be done directly
+	
+		
+		// double -> 8 bytes
+		// float -> 4 bytes
+		// int -> 4 bytes
+		// short -> 2 bytes
+		// boolean -> 1 bit
+		// char -> 2 bytes
+		// byte -> 1 byte
+		// long -> 8 bytes
+		
 		
 //		int a ; 
 //		double d = 4.333; 
@@ -125,9 +136,10 @@ public class BeforeFeb3 {
 //		float f = 5.67f;
 //		double d = .1234;
 //		double result = (f * b) + (i / c) -(d * s);
-//		System.out.println(f*b); 		// 238.14
+//		System.out.println(f*b); 		//238.14
 //		System.out.println(i/c); 		//515
-//		System.out.println(result); 	// 626.7784146484375
+//		System.out.println(d * s); 		//126.3616
+//		System.out.println(result); 	//626.7784146484375
 		
 //		char a='A';
 //		char b=66; // B

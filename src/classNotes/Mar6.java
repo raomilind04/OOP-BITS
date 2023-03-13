@@ -17,7 +17,7 @@ class Carr{
 	}
 	
 	String toDisplay() {
-		return ("auto : " + this.auto_gear + "\n" + "speed : " + this.speed); 
+		return ("auto Carr : " + this.auto_gear + "\n" + "speed : " + this.speed); 
 	}
 }
 
@@ -125,7 +125,8 @@ public class Mar6 {
 		
 //		Sedan car1 = new Sedan(false , 100 ,4); 
 //		Hatchback car2 = new Hatchback(true , 150 , 3); 
-//		Carr car3 = new HondaAmaze(); 
+//		HondaAmaze car3 = new HondaAmaze(); 
+//		
 //		Carr cars[] = new Carr[2];
 //		cars[0] = car1; 
 //		cars[1] = car2; 
@@ -134,7 +135,7 @@ public class Mar6 {
 //		System.out.println(cars[0].toDisplay());
 //		System.out.println(cars[1].toDisplay());
 //		System.out.println(car3.toDisplay());
-//		// cars[0].show() -> Gives an error; 		
+		// cars[0].show() -> Gives an error; 		
 		
 		
 		
@@ -166,7 +167,7 @@ public class Mar6 {
 		o1.run(); 
 		absChild2 o2 = new absChild2(3); 
 		o2.run(); 
-		
+//		
 	}
 
 }

@@ -16,7 +16,6 @@ class Clone2 implements Cloneable {
 }
 
 
-
 class Class1{
 	
 	String name ;

@@ -53,6 +53,7 @@ public class Mar1 {
 		// Constructors of all super class are called when the the child class is intialised. 
 		
 		Child1 c = new Child1(20); 	// Calls the Parent constructor of the parent before the child
+		// Child1 c = new Child1(); 
 		
 		// Use super(x) to pass variables to the parent; 
 		Child2 c2 = new Child2(15); 

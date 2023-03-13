@@ -4,7 +4,7 @@ class Lol{
 	int x = 10; 
 	static int y = 29; 
 	public static void disp() {
-		// System.out.println(x) ; // can not have nono static referenced from a static context; 
+		//System.out.println(x) ; // can not have nono static referenced from a static context; 
 		 System.out.println(y); 
 		 y++; 
 	}

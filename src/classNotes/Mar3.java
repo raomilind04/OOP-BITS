@@ -50,7 +50,7 @@ public class Mar3 {
 		c.display();
 		c.display2();
 		p.display();
-		// p.display3();	// ERROR -> Can not access child methods from parents. 
+		// p.display3();	// ERROR -> Can not access child methods from parents.
 		
 		
 		// 

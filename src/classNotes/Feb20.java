@@ -27,8 +27,7 @@ class B {
 			
 			System.out.println("Inner Class"); 
 			System.out.println("w: " + w); 
-			System.out.println("x: " + oob.x); 
-			
+			System.out.println("x: " + oob.x);
 			// This gives an warning
 			oob.w = 33; 	//print 33 for both inner and outter class
 			oob.x = 10; 
@@ -52,12 +51,12 @@ public class Feb20 {
 		// 		1. Non static => inner class
 		//		2. Static => static nested class
 		// enclosing class , embedding class => outter class
-		
+
 		B ob1 = new B(); 
 		B.B1 ob2 = new B.B1(); 
 		ob1.display();
 		ob2.display();
-		ob1.display(); 
+		ob1.display();
 		
 		// ob1 can not access w and x (Private)
 		// inner class has direct access to static members

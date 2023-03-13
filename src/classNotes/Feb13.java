@@ -102,6 +102,7 @@ public class Feb13 {
 		// pass by value
 //		Inc i1 = new Inc(); 
 //		int y = 10; 
+//		i1.func(y); 
 //		System.out.println("Before: " + y);  
 //		System.out.println("After: " + y); // Same because pass by value happens for primative types
 		
