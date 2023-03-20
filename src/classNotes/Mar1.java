@@ -64,6 +64,7 @@ public class Mar1 {
 		// Class with final keyword can not be inherited. 
 		// If methods have the final keyword then its not possible to have method overloading; 
 		// Hierarchical inheritance => One class extented by multiple classes. 
+		
 	}
 
 }
