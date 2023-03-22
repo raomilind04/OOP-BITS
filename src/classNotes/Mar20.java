@@ -1,6 +1,9 @@
 package classNotes;
 
 
+
+
+
 interface Caar{
 	void run(); 
 }
@@ -13,6 +16,10 @@ class Hyn implements Caar{
 		System.out.println("The Car is running"); 
 	}
 }
+
+
+
+
 
 
 interface autocar{
@@ -34,6 +41,10 @@ class City1 implements Honda1{
 }
 
 
+
+
+
+
 public class Mar20 {
 
 	public static void main(String[] args) {
@@ -41,7 +52,7 @@ public class Mar20 {
 		
 		
 		
-		//  EARLY AND LATE BINDINGr
+		//  EARLY AND LATE BINDING
 		
 		
 		
@@ -72,8 +83,10 @@ public class Mar20 {
 		// public static final- > var in interface
 		// interface can only extends another interface , it can not extend an class
 		
-		Hyn aura = new Hyn(); 
-		aura.run(); 
+//		Hyn aura = new Hyn(); 
+//		aura.run(); 
+		
+		
 		
 	}
 
