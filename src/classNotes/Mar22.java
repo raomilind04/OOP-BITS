@@ -62,7 +62,7 @@ public class Mar22 {
 		// interfaces support multiple inheritance
 		// interfaces can not be instaintied
 		// can not contain constructors
-		// default -> public  , can not be declared private and protected. 
+		// default -> pakage private  , can not be declared private and protected. 
 		// while providing implementation of anty  method it needs to public
 		// public static void -> default var of the interfaces
 		
@@ -78,13 +78,13 @@ public class Mar22 {
 		// b.print2(); error -> undefined for this
 		
 		
-//		i a = new mmi(); 
-//		mmi b = new mmi(); 
-//		ci c = new mmi(); 
-//		
-//		a.print(); 
-//		b.print(); 
-//		c.print(); 
+		i a = new mmi(); 
+		mmi b = new mmi(); 
+		ci c = new mmi(); 
+		
+		a.print(); 
+		b.print(); 
+		c.print(); 
 		
 		
 		// 
