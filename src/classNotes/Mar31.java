@@ -86,6 +86,50 @@ class City312 implements Autocar312{
 }
 
 
+// 		EX 3
+
+interface Honda313{
+	static void display() {
+		System.out.println("dispaly in honda"); 
+	}
+	default void show() {
+		System.out.println("show in honda");
+	}
+	interface Autocar313{
+		static void print() {
+			System.out.println("print from autocar");
+		}
+		default void show() {
+			System.out.println("show from autocar");
+			display(); 
+		}
+	}
+}
+
+//class City313 implements Honda313.Autocar313, Honda313{
+//	public void display() {
+//		Honda313.display();
+//		//Honda313.Autocar313.super.print(); 
+//		System.out.println("display in city");
+//	}
+//}
+
+//class City313 implements Honda313.Autocar313{
+//	public void display() {
+//		Honda313.display();
+//		//Honda313.Autocar313.super.print(); 
+//		System.out.println("display in city");
+//	}
+//}
+
+class City313 implements Honda313{
+	public void display() {
+		Honda313.display();
+		//Honda313.Autocar313.super.print(); 
+		System.out.println("display in city");
+	}
+}
+
 
 
 public class Mar31 {
@@ -98,10 +142,10 @@ public class Mar31 {
 //		car1.print();
 		
 		
-		City312 c1 = new City312(); 
-		c1.print(); 
-		c1.music(); 
-		c1.show(); 
+//		City312 c1 = new City312(); 
+//		c1.print(); 
+//		c1.music(); 
+//		c1.show(); 
 		
 		
 		
@@ -123,8 +167,8 @@ public class Mar31 {
 		//						static using classname (from outter)
 		//						non static using object
 		//			inner-> public static
-		//						static member using classname (from inner)
-		//						non static directly
+		//						static member directly (from inner)
+		//						non static via an object -> can not create an object of interface -> can not access
 		
 		
 		// 2 -> class inside an interface :
@@ -143,6 +187,14 @@ public class Mar31 {
 		
 		
 		// files generated in nested interfaces -> two classfiles -> outter.class + outter$inner.class
+		
+		
+		System.out.println("Static " + Modifier.isStatic(Honda313.Autocar313.class.getModifiers())); 
+		System.out.println("Static " + Modifier.isStatic(Honda313.class.getModifiers())); 
+		City313 c = new City313(); 
+		c.display(); 
+		//c.print(); 
+		c.show(); 
 		
 	}
 }
