@@ -165,7 +165,7 @@ public class Mar31 {
 		// 1 -> interface inside an interface :
 		//			outer-> public default non static
 		//						static using classname (from outter)
-		//						non static using object
+		//						non static using object -> not possible
 		//			inner-> public static
 		//						static member directly (from inner)
 		//						non static via an object -> can not create an object of interface -> can not access
@@ -173,16 +173,21 @@ public class Mar31 {
 		
 		// 2 -> class inside an interface :
 		//			outer-> public default non static
+		//						static using the class name (className.methodName()); 
+		//						non static can be accessed using an object of the nested class 
 		//			inner-> public static
-		
+		//						static memeber can be accesed directly
+		//						non static member can not be accessed because object can not be created. 
 		
 		
 		// 3 -> interface inside an class : 
 		//			outer-> public default non static
+		//						
 		//			inner-> public private default protected static
+		//						static can be directly accessed
+		//						
 		
-		
-			
+	
 		// Modifer.isStatic() -> import from java.lang.reflect.Modifiers
 		
 		

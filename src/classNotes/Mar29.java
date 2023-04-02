@@ -46,15 +46,17 @@ public class Mar29 {
 	// extend interface in a backward compatible/downward compatible. 
 	//static methods can be declared in the interfaces but the can not be overridden by the implemenation class.
 	
+	public static void main(String[] args) {
+		statc b = new statc(); 
+		b.m3(); 
+		stati.m1(); 
+		b.m1(); 
+		statc.m1(); 
 	
-//	statc b = new statc(); 
-//	b.m3(); 
-//	stati.m1(); 
-//	b.m1(); 
-//	statc.m1(); 
-//	
-//	stati a = new statc(); 
-//	a.m2(); 
-//	a.m1(); 	
+		stati a = new statc(); 
+		a.m2(); 
+		//a.m1(); 	
+	}
+	
 	
 }
