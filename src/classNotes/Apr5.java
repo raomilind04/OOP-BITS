@@ -63,6 +63,7 @@ public class Apr5 {
 		
 		
 		// Code 1  -> 
+		
 //		Integer i = Integer.valueOf("25"); 
 //		int i2 = Integer.valueOf("10"); 
 //		//Integer i3 = Integer.valueOf("adfasf"); -> Error
@@ -80,6 +81,7 @@ public class Apr5 {
 		
 		
 		// Code 2  ->
+		
 //		Integer i = Integer.valueOf("1101" , 2); 
 //		System.out.println(i);
 //		Integer i2 = Integer.valueOf("123" , 8); 
@@ -90,22 +92,59 @@ public class Apr5 {
 		
 	
 		// Code 3  -> 
-		Integer i = Integer.valueOf(10); 
-		Double d = Double.valueOf(10.5); 
-		Character c = Character.valueOf('a'); 
 		
-		Integer i1 = Integer.valueOf("1101" , 2); 
+//		Integer i = Integer.valueOf(10); 
+//		Double d = Double.valueOf(10.5); 
+//		Character c = Character.valueOf('a'); 
+//		
+//		Integer i1 = Integer.valueOf("1101" , 2); 
+//		System.out.println(i);
+//		System.out.println(d);
+//		System.out.println(c);
+//		System.out.println(i1);
+//		
+//		int x = Integer.parseInt("2"); 
+//		int y = Integer.parseInt("1101" , 2); 
+//		Double d2 = Double.valueOf("314159E-5");
+//		//Double d3 = "314159E-5"; -> Can not convert String to Double. 
+//		// Double d3  = Double.valueOf("1101" , 2); -> ERROR -> The method valueOf(String) in the type Double is not applicable for the arguments (String, int); 
+//		System.out.println(x);
+//		System.out.println(y);
+//		System.out.println(d2);
+//		
+//		Integer x1 , x2; 
+//		x1 = 100; // Autoboxing
+//		++x1;     // Auto-unboxing and then reboxing
+//		x2 = x1+(x1/3); 
+//		System.out.println(x2);
+//		
+//		Boolean b = Boolean.valueOf("true 123");  // -> anything other than "true" will return false
+//		Boolean b1 = Boolean.valueOf("true"); 
+//		System.out.println(b);
+//		System.out.println(b1);
+//		
+		
+		
+		// Code 4  -> 
+		
+//		boolean b = Boolean.parseBoolean("false"); 
+//		double d1 = Double.parseDouble("28.7"); 
+//		int i1 = Integer.parseInt("25"); 
+//		//Integer i2 = Integer.valueOf("123" , 0);  // ERROR -> radix can not be less than 2
+//		System.out.println(b);
+//		System.out.println(i1);
+		
+		Integer i = Integer.parseInt("123" , 8); 
+		//Integer c = Byte.parseByte("76" , 3); // Error -> Type mismatch: cannot convert from byte to Integer
+		double d = Long.parseLong("1111" , 3); 
+		int i2 = Integer.parseInt("ABCD" , 16); 
 		System.out.println(i);
 		System.out.println(d);
-		System.out.println(c);
-		System.out.println(i1);
+		System.out.println(i2);
 		
 		
 		
 		
-		
-		
-
 	}
 
 }
