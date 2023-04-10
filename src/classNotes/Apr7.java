@@ -44,7 +44,7 @@ public class Apr7 {
 		// no access to private and protected from the class in the other package
 		
 		
-		// 2->		static import packageName.className.*
+		// 2->		import static packageName.className.*
 		
 		// packA2.outterClass obj= new packA2.outterClass()
 		// innerClass obj = new innerClass();
@@ -54,6 +54,30 @@ public class Apr7 {
 		// Inner Members -> 
 		// 		static -> className.memberName
 		// 		non static -> obj creation
+		
+		
+		// 3-> 		packageName.className.nestedStaticClass.*
+		
+		// Nested  class should be static
+		// packA2 -> package | demo ->  class inside packA2 | a11 -> nested static class in the demo class
+		// packA2.demo.a11 a = new packA2.demo.a11() -> creating an object of inner class
+		// Static members can be directly accessed | no non static memberes inside static class
+		// packA2.demo d = new packA2.demo() -> creating an object of the outter class
+		// packA2.demo.memberName -> accessing the static members of the outter class
+		// non static -> through objs
+		
+		
+		// 4->		import static packageName.className.nestedStaticClass.*
+		
+		// packA2.demo d = new packA2.demo(); 
+		// packA2.demo.a11 a = d.new a11(); 
+		// staatic members access directly without the className. 
+		
+		
+		// 5->		import packA2.demo.*
+		
+		// Does not know the path
+		// packA2.demo d = new packA2.demo(); 
 		
 		
 
