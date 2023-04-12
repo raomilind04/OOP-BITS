@@ -15,15 +15,7 @@ interface Honda31 extends autocar31{
 		System.out.println("print in honda"); 
 	}
 }
-//class City31 implements autocar31{
-//	public void show() {
-//		System.out.println("show in city"); 
-//	}
-//	public void print() {
-//		System.out.println("print in city"); 
-//	}
-//}
-class City31 implements autocar31 , Honda31{
+class City31 implements autocar31{
 	public void show() {
 		System.out.println("show in city"); 
 	}
@@ -31,6 +23,14 @@ class City31 implements autocar31 , Honda31{
 		System.out.println("print in city"); 
 	}
 }
+//class City31 implements autocar31 , Honda31{
+//	public void show() {
+//		System.out.println("show in city"); 
+//	}
+//	public void print() {
+//		System.out.println("print in city"); 
+//	}
+//}
 
 
 
@@ -50,17 +50,17 @@ interface Autocar312{
 }
 
 // 	MULTIPLE INHERITANCE
-//class City312 implements Honda312, Autocar312{
-//	public void print() {
-//		System.out.println("print from city");
-//	}
-//	public void music() {
-//		System.out.println("music from city");
-//	}
-//	public void show() {
-//		System.out.println("show from city");
-//	}
-//}
+class City312 implements Honda312, Autocar312{
+	public void print() {
+		System.out.println("print from city");
+	}
+	public void music() {
+		System.out.println("music from city");
+	}
+	public void show() {
+		System.out.println("show from city");
+	}
+}
 
 //class City312 implements Honda312{
 //	public void print() {
@@ -73,17 +73,17 @@ interface Autocar312{
 //		System.out.println("show from city");
 //	}
 //}
-class City312 implements Autocar312{
-	public void print() {
-		System.out.println("print from city");
-	}
-	public void music() {
-		System.out.println("music from city");
-	}
-	public void show() {
-		System.out.println("show from city");
-	}
-}
+//class City312 implements Autocar312{
+//	public void print() {
+//		System.out.println("print from city");
+//	}
+//	public void music() {
+//		System.out.println("music from city");
+//	}
+//	public void show() {
+//		System.out.println("show from city");
+//	}
+//}
 
 
 // 		EX 3
@@ -142,10 +142,10 @@ public class Mar31 {
 //		car1.print();
 		
 		
-//		City312 c1 = new City312(); 
-//		c1.print(); 
-//		c1.music(); 
-//		c1.show(); 
+		City312 c1 = new City312(); 
+		c1.print(); 
+		c1.music(); 
+		c1.show(); 
 		
 		
 		
@@ -182,10 +182,11 @@ public class Mar31 {
 		
 		// 3 -> interface inside an class : 
 		//			outer-> public default non static
-		//						
+		//						static -> using the className
+		//						non static can not be accessed
 		//			inner-> public private default protected static
 		//						static can be directly accessed
-		//						
+		//						non static using object
 		
 	
 		// Modifer.isStatic() -> import from java.lang.reflect.Modifiers
@@ -194,12 +195,12 @@ public class Mar31 {
 		// files generated in nested interfaces -> two classfiles -> outter.class + outter$inner.class
 		
 		
-		System.out.println("Static " + Modifier.isStatic(Honda313.Autocar313.class.getModifiers())); 
-		System.out.println("Static " + Modifier.isStatic(Honda313.class.getModifiers())); 
-		City313 c = new City313(); 
-		c.display(); 
-		//c.print(); 
-		c.show(); 
+//		System.out.println("Static " + Modifier.isStatic(Honda313.Autocar313.class.getModifiers())); 
+//		System.out.println("Static " + Modifier.isStatic(Honda313.class.getModifiers())); 
+//		City313 c = new City313(); 
+//		c.display(); 
+//		//c.print(); 
+//		c.show(); 
 		
 	}
 }

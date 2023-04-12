@@ -36,7 +36,7 @@ interface i{
 
 interface ci {
 	default void print() {
-		// i.super.print(); 
+		//i.super.print(); 
 		System.out.println("In ci"); 
 	}
 }
@@ -75,7 +75,7 @@ public class Mar22 {
 //		a.print1(); 
 //		a.print2(); 
 //		b.print1();
-		// b.print2(); error -> undefined for this
+	    //b.print2(); // error -> undefined for this
 		
 		
 		i a = new mmi(); 
