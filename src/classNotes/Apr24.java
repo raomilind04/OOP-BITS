@@ -123,14 +123,7 @@ public class Apr24 {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
+		// isInterrupted => check for other threads
 		
 		
 
