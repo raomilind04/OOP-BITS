@@ -4,86 +4,86 @@ import static java.lang.System.*;
 
 
 // Code 2
-//class thread implements Runnable{
-//	public void run() {
-//		out.print("In the run thread");
-//		try {
-//			for(int i = 0 ; i < 100 ; i++) {
-//				out.println("hello from run"); 
-//				Thread.sleep(1000);
-//			}
-//		}catch(InterruptedException e) {
-//			out.println("handle expection in child"); 
-//		}
-//		out.println("Exiting the thread"); 
-//		}
-//	
-//		public void display() {
-//			out.println("display in run");
-//		}
-//}
+class thread implements Runnable{
+	public void run() {
+		out.println("In the run thread");
+		try {
+			for(int i = 0 ; i < 100 ; i++) {
+				out.println("hello from run"); 
+				Thread.sleep(1000);
+			}
+		}catch(InterruptedException e) {
+			out.println("handle expection in child"); 
+		}
+		out.println("Exiting the thread"); 
+		}
+	
+		public void display() {
+			out.println("display in run");
+		}
+}
 
 
 
 // 	Code 3
-//class thread2 implements Runnable{
-//	String name;  
-//	thread2(String s1){
-//		this.name = s1; 
-//		Thread t = new Thread(this , name); 
-//		System.out.println("New thread : " + t); 
-//		t.start(); 
-//	}
-//	
-//	public void run() {
-//		try {
-//			for(int i = 0 ; i < 10 ; i++) {
-//				out.println(name + " " + i); 
-//				Thread.sleep(1000); 
-//			}
-//		}catch(InterruptedException e) {
-//			out.println("Exiting"); 
-//		}	
-//	}
-//}
+class thread2 implements Runnable{
+	String name;  
+	thread2(String s1){
+		this.name = s1; 
+		Thread t = new Thread(this , name); 
+		System.out.println("New thread : " + t); 
+		t.start(); 
+	}
+	
+	public void run() {
+		try {
+			for(int i = 0 ; i < 10 ; i++) {
+				out.println(name + " " + i); 
+				Thread.sleep(1000); 
+			}
+		}catch(InterruptedException e) {
+			out.println("Exiting"); 
+		}	
+	}
+}
 
 
 
 // Code 4
-//class thread4 implements Runnable{
-//	thread4(){
-//		Thread t = new Thread(this); 
-//		t.start(); 
-//	}
-//	
-//	public void run() {
-//		try {
-//			for(int i = 0 ; i < 10 ; i++) {
-//				out.println(i); 
-//				Thread.sleep(1000); 
-//			}
-//		}catch(InterruptedException e) {
-//			out.println("Exiting"); 
-//		}	
-//	}
-//}
+class thread4 implements Runnable{
+	thread4(){
+		Thread t = new Thread(this); 
+		t.start(); 
+	}
+	
+	public void run() {
+		try {
+			for(int i = 0 ; i < 10 ; i++) {
+				out.println(i); 
+				Thread.sleep(1000); 
+			}
+		}catch(InterruptedException e) {
+			out.println("Exiting"); 
+		}	
+	}
+}
 
 
 
 // Code 5
 // Can not extend other classes because that will lead to multiple inheritance
-//class thread5 extends Thread{
-//	public void run() {
-//		try {
-//			for(int i = 0 ; i < 10 ; i++) {
-//				out.println(i); 
-//				Thread.sleep(1000); 
-//			}
-//		}catch(InterruptedException e) {
-//			out.println("Exiting"); 
-//		}	
-//	}
-//}
+class thread5 extends Thread{
+	public void run() {
+		try {
+			for(int i = 0 ; i < 10 ; i++) {
+				out.println(i); 
+				Thread.sleep(1000); 
+			}
+		}catch(InterruptedException e) {
+			out.println("Exiting"); 
+		}	
+	}
+}
 
 
 // Code 6
@@ -199,7 +199,7 @@ public class Apr21 {
 		// Code 4
 //		thread4 t = new thread4(); 
 //		try {
-//			Thread.sleep(10000);
+//			Thread.sleep(5000);
 //		}catch(InterruptedException e) {
 //			out.println("Exiting main"); 
 //		}
@@ -238,11 +238,12 @@ public class Apr21 {
 		Thread t = new Thread(t1); 
 		thread6 t2 = new thread6();
 		Thread tx = new Thread(t2); 
-		t.start(); 
+		//t.start(); 
 		tx.start();
-		out.println(t); 
+		//out.println(t); 
 		//tx.interrupt();
-		tx.stop(); 
+		//tx.stop(); 
+		tx.suspend(); 
 		try {
 			for(int i = 1000 ; i >= 990 ; i--) {
 				out.println(i); 

@@ -59,7 +59,7 @@ class V{
 	
 	void func(V x) {
 		x.y += 10; 
-		System.out.println(x.y); 
+		System.out.println(x.y);
 	}
 }
 
@@ -104,14 +104,14 @@ public class Feb13 {
 //		int y = 10; 
 //		i1.func(y); 
 //		System.out.println("Before: " + y);  
-//		System.out.println("After: " + y); // Same because pass by value happens for primative types
+//		System.out.println("After: " + y); 
 		
 		// pass be reference
-//		V v1 = new V(); 
-//		V v2 = new V(); 
-//		v1.func(v2); 
-//		System.out.println("v2: " + v2.y);
-//		System.out.println("v1: " + v1.y); 
+		V v1 = new V(); 
+		V v2 = new V(); 
+		v1.func(v2); 
+		System.out.println("v2: " + v2.y);
+		System.out.println("v1: " + v1.y); 
 		
 		
 

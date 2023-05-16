@@ -1,6 +1,8 @@
 package classNotes;
-import java.io.*; 
+import java.io.*;
 import java.util.*;
+
+
 public class May3 {
 
 	public static void main(String[] args) throws Exception{
@@ -28,19 +30,20 @@ public class May3 {
 		
 		
 		
-		//	Code 1 -> Check
+		//	Code 1 -> 
 //		InputStreamReader br = new InputStreamReader(System.in); 
 //		System.out.println("Enter an char : "); 
 //		char c; 
 //		int a ;
 //		c = (char) br.read(); 
-//		a = br.read(); 
-//		System.out.println(a);
+//		//a = br.read();
 // 		while(c != 'x') {
-//			System.out.println(a);
-//			//aSystem.out.println(c);
-//			//c = (char) br.read();
-//			a = br.read(); 
+//			//System.out.println(a);
+// 			if(c != '\n') {
+// 				System.out.println(c);
+// 			}
+//			c = (char) br.read();
+//			//a = br.read(); 
 //		}
 		
 		
@@ -59,15 +62,18 @@ public class May3 {
 //		File file = new File("Read1.txt"); 
 //		BufferedReader br = new BufferedReader(new FileReader(file)); 
 //		String s; 
-//		while((s = br.readLine()) != null) {
-//			System.out.println(s);
-//		}
+//		s = br.readLine(); 
+//		System.out.println(s);
+////		while((s = br.readLine()) != null) {
+////			System.out.println(s);
+////		}
 		
 		
 		// Code 4 -> Write has to be used with the print otherwise it prints nothing
 //		System.out.write(111);
 //		System.out.write(111);
-//		System.out.write(112);
+//		System.out.write('p');
+//		System.out.write('s');
 //		System.out.println(); 
 //		System.out.println("hello"); 
 	
@@ -78,7 +84,7 @@ public class May3 {
 //		
 		
 		// Code 6
-		// System.out.write("abc");
+//		System.out.write("abc");
 //		System.out.write(120);
 //		System.out.write('\n');
 //		System.out.print(args[0]);
@@ -117,26 +123,26 @@ public class May3 {
 		
 		
 		// Code 2
-//		Scanner s1 = new Scanner(System.in);
-//		System.out.println("Enter your name : ");
-//		String name = s1.nextLine(); 
-//		System.out.println("Your Name : " + name);
+		Scanner s1 = new Scanner(System.in);
+		System.out.println("Enter your name : ");
+		String name = s1.nextLine(); 
+		System.out.println("Your Name : " + name);
 		
 		
 		// Code 3
-		Scanner s1 = new Scanner(System.in); 
-		// System.out.println(s1); 
-		int num , mean; 
-		int sum = 0; 
-		int count = 0; 
-		while(s1.hasNextInt()) {
-			num = s1.nextInt(); 
-			sum += num; 
-			count++; 
-			mean = sum/count; 
-			System.out.println("Sum : " + sum);
-			System.out.println("Mean : " + mean);
-		}
+//		Scanner s1 = new Scanner(System.in); 
+//		// System.out.println(s1); 
+//		int num , mean; 
+//		int sum = 0; 
+//		int count = 0; 
+//		while(s1.hasNextInt()) {
+//			num = s1.nextInt(); 
+//			sum += num; 
+//			count++; 
+//			mean = sum/count; 
+//			System.out.println("Sum : " + sum);
+//			System.out.println("Mean : " + mean);
+//		}
 		
 		
 		

@@ -9,6 +9,7 @@ class M{
 	void dis(){
 		System.out.println(air); 
 		System.out.println(mil); 
+		System.out.println("End of dis");
 		return ; 
 	}
 	void uAir(int newAir) {
@@ -25,8 +26,8 @@ class M{
 	// Constructor
 	// Called only once
 	M(){
-		this.air = 1; 
-		this.mil = 12.5; 
+		this.air = 10; 
+		this.mil = 100; 
 	}
 	// parameters passed using a different name => no need to use this keyword
 	// replace this with obj => by object handler
@@ -47,7 +48,7 @@ public class Feb6_8 {
 		// CODE 1 methods
 		M car1 = new M(); 
 		car1.dis();
-		car1.uAir(3);
+		car1.uAir(4);
 		car1.uMil(14.5); 
 		car1.dis(); 
 		car1.uBoth(7 , 15);

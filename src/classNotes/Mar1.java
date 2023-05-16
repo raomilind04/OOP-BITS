@@ -1,9 +1,9 @@
 package classNotes;
 
 class Parent1{
-	Parent1(){
-		System.out.println("Parent"); 
-	}
+//	Parent1(){
+//		System.out.println("Parent"); 
+//	}
 	Parent1(int x){
 		System.out.println("Parent : " + x);
 //		System.out.println("x : " + x); 
@@ -21,7 +21,7 @@ class Child1 extends Parent1{
 //		super(x); 
 //	}
 	Child1(int x){
-		super(x); 
+		super(10);  
 		System.out.println("Child1 : " + x); 
 	}
 }
@@ -52,10 +52,11 @@ public class Mar1 {
 		
 		// Constructors of all super class are called when the the child class is intialised. 
 		
-		Child1 c = new Child1(20); 	// Calls the Parent constructor of the parent before the child
-		// Child1 c = new Child1(); 
+//		Child1 c = new Child1(20); 	// Calls the Parent constructor of the parent before the child
+//		Child1 c = new Child1(); 
 		
 		// Use super(x) to pass variables to the parent; 
+//		Child2 c1 = new Child2(); 
 		Child2 c2 = new Child2(15); 
 		// output- > 	//Parent : 15
 						//Child1 : 15

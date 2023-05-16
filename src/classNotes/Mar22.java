@@ -27,26 +27,25 @@ interface i{
 	}
 }
 
-//interface ci extends i{
-//	default void print() {
-//		i.super.print(); 
-//		System.out.println("In ci"); 
-//	}
-//}
-
-interface ci {
+interface ci extends i{
 	default void print() {
-		//i.super.print(); 
+		i.super.print(); 
 		System.out.println("In ci"); 
 	}
 }
+
+//interface ci {
+//	default void print() {
+//		System.out.println("In ci"); 
+//	}
+//}
 
 class mmi implements i , ci{
 	
 	// implements both the i and ci interface but the access needs to be through the child ci only
 	public void print() {
-		//ci.super.print(); 
-		// i.super.print(); -> not allowed 
+		ci.super.print(); 
+		//i.super.print(); // -> not allowed 
 		System.out.println("In m"); 
 	}
 }

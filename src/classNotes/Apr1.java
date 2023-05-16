@@ -29,18 +29,17 @@ class Aura011 implements Car011 , Hyu011{
 	}
 	
 	static void m1() {
-		System.out.println("m2 in aura");
+		System.out.println("m1 in aura");
 //		show(); // -> error
 //		Car011.m1();
-//		m1(); // -> error
+//		m1(); // -> error -> INFINITE LOOP
 	}
 	static void m2() {
 		System.out.println("m2 in aura");
 //		show(); // -> error
-//		Car011.m1();
-//		m1(); // -> error
+		Car011.m1();
+		m1(); 
 	}
-	
 }
 
 
@@ -99,12 +98,12 @@ interface honda012 extends autocar012{
 class civic012 implements honda012{
 	public void print() {
 		honda012.super.print(); 
-		//autocar012.super.print();
+		//autocar012.super.print(); // -> Error
 		//honda012.show(); -> error
 		show(); 
-		//m1(); 
+		//m1(); 	// -> Error 
 		honda012.m1();
-		//honda012.m2(); 
+		m2(); 
 		System.out.println("print in civic");
 	}
 }
@@ -123,7 +122,9 @@ public class Apr1 {
 //		car1.type(); 
 //		car1.auto(); 
 //		Aura011.m1(); 
-//		car2.type();  // -> error (he method type() is undefined for the type Car011)
+//		Aura011.m2(); 
+		
+		//car2.type();  // -> error (he method type() is undefined for the type Car011)
 		
 		
 		
@@ -137,13 +138,15 @@ public class Apr1 {
 		civic012 c1 = new civic012(); 
 		autocar012 a = new civic012(); 
 		honda012 b = new civic012(); 
+//		b.print();		
 		
 		
-//		b.print();		// -> output below -> super of the extending class is also called
+		// -> output below -> super of the extending class is also called
 //		print in autocar
 //		print in honda
 //		show in autocar
 //		m1 in honda
+//		m2 in honda
 //		print in civic
 		
 		
@@ -153,7 +156,8 @@ public class Apr1 {
 		
 		
 		
+	
 		
-		// EXAMPLE 3
+		
 	}
 }

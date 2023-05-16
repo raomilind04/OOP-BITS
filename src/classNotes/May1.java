@@ -55,22 +55,30 @@ public class May1 {
 //		System.out.println(temp); 
 //		
 //		// Index of method
-//		String s7 = "Hello hi dog cat cat cat dog"; 
+//		String s7 = "Hello hi catdogcat cat cat dogcat"; 
 //		int startIndex = s7.indexOf("dog"); 
 //		System.out.println(startIndex); 
-//		int startIndex2 = s7.indexOf("dog" , 12);  // -> Start after the 12th index 
+//		int startIndex2 = s7.indexOf("dog" , 15);  // -> Start after the 12th index 
 //		System.out.println(startIndex2); 
-//		
+
 //		// isEmpty | Length | Equals
 //		String s8  = "Hello"; 
+//		String s12 = "Hello"; 
 //		String s9 = "hi"; 
 //		String s10 = ""; 
 //		String s11 = new String("Hello"); 
 //		System.out.println(s8.length());
 //		System.out.println(s10.isEmpty());
 //		System.out.println(s8.equals(s9));
+//		System.out.println(s8 == s12); 
 //		System.out.println(s8 == s9); 
-//		System.out.println(s8 == s11);  
+//		System.out.println(s8 == s11); 
+//		System.out.println(System.identityHashCode(s8)); 
+//		System.out.println(System.identityHashCode(s12));
+//		s12 = "Hello2"; 
+//		System.out.println(System.identityHashCode(s8)); 
+//		System.out.println(System.identityHashCode(s12));
+
 		// Double equals compares the reference of the string
 		
 		
@@ -121,7 +129,8 @@ public class May1 {
 //			System.out.println((char)i); 
 //		}
 //		fr.close(); 
-//		
+		
+		
 		// FileNotFoundExcetion is the subclass of IOException
 		// In write if file already exits then its over written
 		// read can throw an IOException
@@ -141,7 +150,7 @@ public class May1 {
 //		}
 //		try {
 //			while((i = fr.read()) != -1) {
-//				System.out.println((char) i); 
+//				System.out.print((char) i); 
 //			}
 //			fr.close(); 
 //		}catch(IOException e) {
@@ -290,10 +299,12 @@ public class May1 {
 //		FileInputStream fin = new FileInputStream("Read1.txt"); 
 //		BufferedInputStream bin = new BufferedInputStream(fin); 
 //		System.out.println("Remaining Bytes : " + bin.available()); 
-//		System.out.println("Content : ");
+//		System.out.print("Content : ");
 //		int ch; 
 //		byte[] b = new byte[200]; 
-//		ch = bin.read(b , 5 , 10); 
+//		ch = bin.read(b , 20 , 30);
+//		System.out.println();
+//		System.out.println("ch : " + ch);
 //		for(int i = 0 ; i < b.length ; i++) {
 //			System.out.print((char) b[i]);  // -> Should print empty and blank spaces also -> Not working
 //		}
@@ -303,18 +314,18 @@ public class May1 {
 		
 		
 		// Code 10
-//		FileInputStream fin = new FileInputStream("Read1.txt"); 
-//		BufferedInputStream bin = new BufferedInputStream(fin); 
-//		System.out.println("Remaining Bytes : " + bin.available()); 
-//		System.out.println("Content : ");
-//		int ch; 
-//		byte[] b = new byte[200]; 
-//		while((ch = bin.read()) != -1){
-//			System.out.print((char) ch); 
-//		}
-//		System.out.println(); 
-//		System.out.println("Remaining Bytes : " + bin.available()); 
-//		fin.close(); 
+		FileInputStream fin = new FileInputStream("Read1.txt"); 
+		BufferedInputStream bin = new BufferedInputStream(fin); 
+		System.out.println("Remaining Bytes : " + bin.available()); 
+		System.out.println("Content : ");
+		int ch; 
+		byte[] b = new byte[200]; 
+		while((ch = bin.read()) != -1){
+			System.out.print((char) ch); 
+		}
+		System.out.println(); 
+		System.out.println("Remaining Bytes : " + bin.available()); 
+		fin.close(); 
 		
 		
 		
@@ -325,6 +336,8 @@ public class May1 {
 		//System.out is the standard output stream -> Object of printStream
 		// System.err -> Standard error stream
 		// System.in -> Standard input Stream. 
+		
+		
 		
 		
 		

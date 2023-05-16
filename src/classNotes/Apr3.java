@@ -24,7 +24,7 @@ public class Apr3 {
 		// every wrapper except Character has overloaded constructors
 		//				1-> primivte data type as args
 		//				2-> string args -> format shoud be parasable number -> NumberFormatException
-		// Character takes onlt char type
+		// Character takes only char type
 		// Float -> 3 constructors
 		// eg -> Boolean(boolean b1) -> b1 should be true or false (should be in lower case)
 		// when string is passed -> true => true and everything else is false (case not imp ?)
@@ -75,8 +75,8 @@ public class Apr3 {
 //		Integer i1 = new Integer((byte) 10); 
 //		System.out.println("integer : " + i1);
 //		
-//		Byte b1 = new Byte((byte) 258); 
-//		Byte b2 = new Byte((byte) 133); // -> 2's compliment
+//		Byte b1 = new Byte((byte) 260); 
+//		Byte b2 = new Byte((byte) 129); // -> 2's compliment
 //		System.out.println("Byte object : " + b1);
 //		System.out.println("Byte object : " + b2);
 		
@@ -112,11 +112,11 @@ public class Apr3 {
 		
 		//wrapping
 //		Integer i1 = new Integer(100); 
-//		//unwrapping
+		//unwrapping
 //		int i = i1; 
 //		System.out.println("integer : " + i1);
 //		System.out.println("int : " + i);
-//		//byte b1 = i1; // -> error -> downconversion
+//		// byte b2 = i1; // -> error -> downconversion
 //		Byte b1 = new Byte((byte) 10); 
 //		i = b1; 
 //		System.out.println("int : " + i);
@@ -130,7 +130,7 @@ public class Apr3 {
 		// char charValue(); -> return the encapsulated char value
 		// name.floatValue(); 
 		// name.doubleValue(); 
-		// name.
+		
 		
 //		Integer i1 = new Integer(100); 
 //		int i = i1.intValue(); 

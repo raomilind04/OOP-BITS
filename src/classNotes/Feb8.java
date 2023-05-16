@@ -5,17 +5,17 @@ class Car{
 	static int sum; 
 	
 	// static block
-//	static {
-//		for(int i = 0 ; i < 3 ; i++) {
-//			sum += i; 
-//		}
-	
-	// non static block
-	{
+	static {
 		for(int i = 0 ; i < 3 ; i++) {
 			sum += i; 
 		}
 	}
+	// non static block
+//	{
+//		for(int i = 0 ; i < 3 ; i++) {
+//			sum += i; 
+//		}
+//	}
 	
 }
 
@@ -49,9 +49,9 @@ public class Feb8 {
 //		System.out.println(Car.sum); 
 		
 		// Static block
-//		Car c1 = new Car(); 
-//		Car c2 = new Car(); 
-//		System.out.println(Car.sum); // ans is 3 -> although two objects are created but static block is run only once 
+		Car c1 = new Car(); 
+		Car c2 = new Car(); 
+		System.out.println(Car.sum); // ans is 3 -> although two objects are created but static block is run only once 
 		
 		// Non Static Block
 //		System.out.println(Car.sum);  // ans = 0
@@ -59,8 +59,7 @@ public class Feb8 {
 //		System.out.println(Car.sum); // ans = 3
 //		Car c2 = new Car();
 //		System.out.println(Car.sum); // ans = 6
-		
-		// 
+		 
 		
 	}
 

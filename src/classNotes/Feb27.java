@@ -13,10 +13,12 @@ class overRidingP{
 	overRidingP(int x , int y){
 		this.x = x; 
 		this.y = y; 
+		System.out.println("C parent"); 
 	}
 	overRidingP(){
 		this.x = 2; 
 		this.y = 2; 
+		System.out.println("C parent"); 
 	}
 	
 }

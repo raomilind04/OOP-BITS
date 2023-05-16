@@ -4,10 +4,13 @@ class Carr{
 	boolean auto_gear;
 	int speed; 
 	
-	Carr(boolean auot_gear , int speed){
+	Carr(boolean auto_gear , int speed){
 		this.auto_gear = auto_gear; 
 		this.speed = speed; 
 		System.out.println("This is the car class"); 
+	}
+	Carr(){
+		
 	}
 	void decelerate(int decrement) {
 		speed -= decrement; 
@@ -46,7 +49,9 @@ class Sedan extends Carr{
 class Hatchback extends Carr{
 	static int carLength; 
 	Hatchback(boolean auto_gear , int speed , int carLength){
-		super(auto_gear , speed);
+		super(); 
+		this.auto_gear  = auto_gear; 
+		this.speed = speed; 
 		this.carLength = carLength; 
 		System.out.println("This is Hatchback");
 	}
@@ -92,13 +97,15 @@ abstract class abs{
 		System.out.println("x : " + x + " From abs"); 
 	}
 	final void mul() {
-		System.out.println(this.x + "*2 = "+ x*2); 
+		System.out.println(this.x + "*2 = "+ x*2);
+		
 	}
 }
 
 class absChild extends abs{
 	absChild(int x){
 		super(x); 
+		System.out.println("x : " + x + " From absChild");
 	}
 	void run() {
 		System.out.println("Child 1"); 
@@ -109,10 +116,11 @@ class absChild extends abs{
 class absChild2 extends abs{
 	absChild2(int x){
 		super(x); 
+		System.out.println("x : " + x + " From absChild2");
 	}
 	void run() {
-		mul();
 		System.out.println("Child 2"); 
+		mul();
 	}
 }
 
@@ -132,10 +140,12 @@ public class Mar6 {
 //		cars[1] = car2; 
 //		car1.show(); 
 //		car2.show(); 
+//		System.out.println(car1.toDisplay());
 //		System.out.println(cars[0].toDisplay());
 //		System.out.println(cars[1].toDisplay());
 //		System.out.println(car3.toDisplay());
-		// cars[0].show() -> Gives an error; 		
+		
+		//cars[0].show() -> Gives an error; 		
 		
 		
 		

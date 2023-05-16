@@ -32,7 +32,7 @@ public class Apr5 {
 		
 		
 		// autoboxing occours when an argument is passed to a method or when a value is returned. 
-		// Integer i1 = 100 ; i++ -> convert Int to int -> add 1 -> convert int back to Int
+		// Integer i1 = 100 ; i1++ -> convert Int to int -> add 1 -> convert int back to Int
 		// Math operation can not be performed on objects -> convert to primitive types
 		// Integer + Double => autobox and then auto rebox
 		// object and primitive data types can not be directly compared -> convert in the case of switch statements
@@ -75,7 +75,7 @@ public class Apr5 {
 //		System.out.println(d1);
 //		System.out.println(d2); 
 //		
-//		Boolean b = Boolean.valueOf("false"); 
+//		Boolean b = Boolean.valueOf("True"); 
 //		System.out.println(b); 
 		
 		
@@ -111,18 +111,18 @@ public class Apr5 {
 //		System.out.println(x);
 //		System.out.println(y);
 //		System.out.println(d2);
-//		
+		
 //		Integer x1 , x2; 
 //		x1 = 100; // Autoboxing
 //		++x1;     // Auto-unboxing and then reboxing
 //		x2 = x1+(x1/3); 
 //		System.out.println(x2);
-//		
+	
 //		Boolean b = Boolean.valueOf("true 123");  // -> anything other than "true" will return false
 //		Boolean b1 = Boolean.valueOf("true"); 
 //		System.out.println(b);
 //		System.out.println(b1);
-//		
+		
 		
 		
 		// Code 4  -> 
@@ -136,11 +136,12 @@ public class Apr5 {
 		
 		Integer i = Integer.parseInt("123" , 8); 
 		//Integer c = Byte.parseByte("76" , 3); // Error -> Type mismatch: cannot convert from byte to Integer
-		double d = Long.parseLong("1111" , 3); 
-		int i2 = Integer.parseInt("ABCD" , 16); 
-		System.out.println(i);
-		System.out.println(d);
-		System.out.println(i2);
+//		double d = Long.parseLong("1111" , 3); 
+//		// A -> 10; 
+//		int i2 = Integer.parseInt("abcd" , 16); 
+//		System.out.println(i);
+//		System.out.println(d);
+//		System.out.println(i2);
 		
 		
 		

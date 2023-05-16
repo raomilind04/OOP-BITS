@@ -135,9 +135,9 @@ public class Feb15_17 {
 		// Var args methods can be overloaded just like normal methods. 
 		// show(int n , int ... a) and show(int ...a) => gives error
 		
-//		Class3 x = new Class3(); 
-//		int ans = x.sum(1,2,3,4,5,6); 
-//		System.out.println(ans);
+		Class3 x = new Class3(); 
+		int ans = x.sum(1,2,3,4,5,6); 
+		System.out.println(ans);
 		
 		
 

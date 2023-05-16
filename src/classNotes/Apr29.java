@@ -5,7 +5,8 @@ import java.util.*;
 
 // 	CODE 2
 //class stack1{
-//	static Stack<Integer> s1 = new Stack<Integer>(); 
+//	static Stack<Integer> s1 = new Stack(); 
+//	// static Stack<Integer> s1 = new Stack<Integer> (); 
 //	static void pts(int a) {
 //		s1.push(a); 
 //		System.out.println("push : " + a); 
@@ -18,7 +19,7 @@ import java.util.*;
 //	}
 //}
 
-// CODE 3
+
 
 public class Apr29 {
 	
@@ -47,7 +48,45 @@ public class Apr29 {
 //	}
 	
 	// 		CODE 5
-//	
+	static int s1; 
+	static Stack<Integer> st = new Stack<Integer> (); 
+	static void push_to_stack() {
+		System.out.println("Push : ");
+		boolean flag = true; 
+		for(int x = 7 ; x > 0 ; x--) {
+			if(flag) {
+				st.push(x); 
+			}else {
+				st.push(x+10); 
+			}
+			flag = !flag; 
+		}
+		System.out.println("Stack : " + st); 
+		s1 = st.size(); 
+		System.out.println("Size : " + s1);
+	}
+	static void pop_from_stack() {
+		System.out.println("Pop : ");
+		for(int j = 1 ; j < 8 ; j++) {
+			Integer y = st.pop(); 
+			System.out.println(y);
+		}
+		s1 = st.size(); 
+		System.out.println("Size : " + s1);
+	}
+	static void peek_from_stack() {
+		Integer top = st.peek(); 
+		System.out.println("Stack top : " + top);
+	}
+	static void search_from_stack(int x) {
+		Integer i1 = st.search(x); 
+		if(i1 < 0) {
+			System.out.println("Not Found");
+		}else {
+			System.out.println("Found at pos : " + i1);
+		}
+		
+	}
 	
 	public static void main(String[] args) {
 		
@@ -76,6 +115,9 @@ public class Apr29 {
 //		System.out.println(temp); 
 //		System.out.println(s1); 
 //		s1.pop(); 
+//		// peek call in empty stack throws and exception
+////		int top = s1.peek(); 
+////		System.out.println(top); 
 //		try {
 //			s1.pop(); 
 //		}catch(Exception e) {
@@ -110,7 +152,7 @@ public class Apr29 {
 		//		CODE 5
 //		push_to_stack(); 
 //		peek_from_stack(); 
-//		search_from_stack(5);
+//		search_from_stack(14);
 //		search_from_stack(10);
 //		pop_from_stack(); 
 	

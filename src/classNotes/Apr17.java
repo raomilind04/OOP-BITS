@@ -12,6 +12,8 @@ public class Apr17 {
 //		}catch(NullPointerException e) {
 //			out.println("Error"); 
 //		}
+		
+		
 		// Wrong catch leads to code termination. 
 		
 		
@@ -48,6 +50,15 @@ public class Apr17 {
 //		}catch(Exception e){
 //			out.println("Some Error"); 
 //		}
+//		
+//		try {
+//			int a = 0; 
+//			int b = 46/a; 
+//		}catch(NullPointerException e) {
+//			out.println("NULL Error"); 
+//		}catch(Exception e){
+//			out.println("Some Error"); 
+//		}
 		
 		
 		// ERROR -> 
@@ -81,7 +92,7 @@ public class Apr17 {
 //		try {
 //			//int a = 5/0; 
 //			try {
-//				int b = 10/0; 
+//				//int b = 10/0; 
 //				try {
 //					int arr[] = {1 , 2 , 3}; 
 //					out.println(arr[10]); 
@@ -155,25 +166,31 @@ public class Apr17 {
 		
 		// CODE 3 ->
 		
-//		try {
-//			try {
-//				int a = 0; 
-//				int b = 10; 
-//				int c = b/a;
-//			}catch(ArithmeticException e) {
-//				out.println("inner errror"); 
-//			}finally {
-//				out.println("inner finally"); 
-//			}
-//		}catch(Exception e) {
-//			out.println("outter error"); 
-//		}finally {
-//			out.println("outter finally"); 
-//		}
+		try {
+//			int a0 = 10; 
+//			int b0 = 0; 
+//			int c0 = a0/b0; 
+			try {
+				int a = 0; 
+				int b = 10; 
+				int c = b/a;
+			}catch(ArithmeticException e) {
+				out.println("inner errror"); 
+			}finally {
+				out.println("inner finally"); 
+			}
+		}catch(NullPointerException e) {
+			out.println("outter error"); 
+		}finally {
+			out.println("outter finally"); 
+		}
 		
 		// try block of the child can not catch the exception of the parent.	
 		
 
+		
+		
+		
 	}
 
 }

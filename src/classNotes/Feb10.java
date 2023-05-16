@@ -4,7 +4,7 @@ class Lol{
 	int x = 10; 
 	static int y = 29; 
 	public static void disp() {
-		//System.out.println(x) ; // can not have nono static referenced from a static context; 
+		//System.out.println(x) ; // can not have non static referenced from a static context; 
 		 System.out.println(y); 
 		 y++; 
 	}
@@ -42,7 +42,6 @@ class Mo{
 		for(int i = 0 ; i < n ; i++) {
 			System.out.println(i +  " "  + s); 
 		}
-		
 	}
 	void disp(String s) {
 		System.out.println("Type2"); 
@@ -91,7 +90,7 @@ public class Feb10 {
 		// make polym in java possible
 		// void func() , void func(int a) , void func(int a , int b) => overloaded
 		// may or may not have different return types but the number of arguments need to be different
-		// types- > 1. can number of args 2. change types of args
+		// types- > 1. change number of args 2. change types of args
 		// automatic type conversion if no method defination matches => overlaod resolution
 		// lossy conversion are not allowed in overload resolution
 		
@@ -118,8 +117,8 @@ public class Feb10 {
 		// JVM looks for method signature (String[]  args)
 		// overloaded main method are called and executed only if they are called from the main method
 		
-//		System.out.println("First main method"); 
-//		main("hello"); 
+		System.out.println("First main method"); 
+		main("hello"); 
 		
 		
 	}

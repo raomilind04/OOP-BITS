@@ -9,8 +9,8 @@ public class May4 {
 		
 		
 		//	Code 1
-//		int i; 
-//		double d; 
+		int i; 
+		double d; 
 //		boolean b; 
 //		String str; 
 //		FileReader fin = new FileReader("Read2.txt"); 
@@ -73,7 +73,7 @@ public class May4 {
 //		double d = 10.5; 
 //		System.out.printf("a = %.4f\n", d);
 //		double d1 = 12345.6; 
-//		System.out.printf("a = %15.4f\n", d1);
+//		System.out.printf("a = %20.4f\n", d1);
 
 		
 		// Code 4
@@ -89,7 +89,10 @@ public class May4 {
 		
 		
 		
+		
+		
 		// UNIFIED MODELING LANGUAGES
+		
 		
 		
 		

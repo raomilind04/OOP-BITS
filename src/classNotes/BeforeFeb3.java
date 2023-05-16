@@ -44,7 +44,7 @@ public class BeforeFeb3 {
 		
 		// Java uses uni-code for chars
 		// unicode -> 16 bits. 
-		// String objects are immutable but the reference var is immutable. 
+		// String objects are immutable but the reference var is mutable. 
 		// from java.lang.String
 		// int dec = 123; 
 		// int oct = 0123; 

@@ -65,6 +65,7 @@ public class Apr19 {
 		}catch(exp2 e) {
 			out.println("handling exp2"); 
 		}
+		out.println("End of check5"); 
 	}
 	
 	// Code 6
@@ -117,9 +118,10 @@ public class Apr19 {
 		
 		
 		// InterruptedException -> must be caught and declared otherwise it will throw an error -> Checked Exceptions
-		// You are forced to handle checked exception at runtime
-		// Mehtod thows exceptions but does not handle them. 
-		// 
+		// You are forced to handle checked exception at compile time
+		// Method thows exceptions but does not handle them. 
+		
+	
 		
 		
 		// Code 3
@@ -148,9 +150,10 @@ public class Apr19 {
 		
 		
 		
-		// Code 5
+		 //Code 5
 //		check5(0);
 //		check5(100); 
+//		check5(5); 
 		
 		
 		//	Code 6
@@ -185,18 +188,18 @@ public class Apr19 {
 		
 		// Code 7
 		
-		int a = 0; 
-		int b = 10; 
-		try {
-			b= b/a; 
-		}catch(ArithmeticException e) {
-			out.println(e); 
-			e.printStackTrace(); 
-			out.println(e.getMessage()); 
-			String m = e.toString();
-			out.println(m); 
-		}
-		
+//		int a = 0; 
+//		int b = 10; 
+//		try {
+//			b= b/a; 
+//		}catch(ArithmeticException e) {
+//			out.println(e); 
+//			e.printStackTrace(); 
+//			out.println(e.getMessage()); 
+//			String m = e.toString();
+//			out.println(m); 
+//		}
+
 		
 	}
 }

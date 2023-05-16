@@ -30,7 +30,7 @@ public class Mar29 {
 	
 	// class can implement multiple interfaces
 	// interface extends multiple interfaces
-	// class p1 and class p2 have a method m1 and a chidl class inherit both p1 and p2. Which m1 to inherit ? -> This is why multiple inheritance is not allowed. 
+	// class p1 and class p2 have a method m1 and a child class inherit both p1 and p2. Which m1 to inherit ? -> This is why multiple inheritance is not allowed. 
 	// default methods can not have the same name when multiple inheritance happens.
 	// if class implements the same name method from the interfaces then the method from the class is used. 
 	

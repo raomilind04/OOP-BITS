@@ -1,5 +1,6 @@
 package classNotes;
-
+import java.util.*;
+import java.io.*; 
 
 abstract class Honda {
 	static String color = "Red"; 
@@ -70,13 +71,103 @@ class s{
 	
 }
 
+interface i1201{
+	static void method() {
+		System.out.println("method from inteface"); 
+	}
+}
+class c1201 implements i1201{
+	public static void method() {
+		System.out.println("Mthod from class"); 
+	}
+}
+
+
+class A12 {
+	
+}
+
 
 public class random {
 
-	public static void main(String[] args) {
-		for(int i = 0 ; i < args.length ; i++) {
-			System.out.println(args[i]); 
-		}
+	public static void main(String[] args) throws IOException{	
+		
+//		Byte b1 = new Byte((byte) 10); 
+//		Byte b2 = new Byte((byte) 10); 
+//		Byte b3 = (byte) 10; 
+//		Byte b4 = (byte) 10; 
+//		System.out.println(b3 == b4); 
+//		System.out.println(b1.equals(b2)); 
+//		System.out.println(b1 == b2); 
+//		System.out.println(b1 < 12); 
+		
+//		int x = Byte.parseByte("76" , 8); 
+//		System.out.println(x);
+		
+//		c1201 c1 = new c1201(); 
+//		c1.method(); 
+//		i1201.method(); 
+		
+//		FileInputStream fr = new FileInputStream("Read1.txt"); 
+//		int a; 
+//		while((a = fr.read()) != -1) {
+//			System.out.print((char)a);
+//		}
+//		fr.close(); 
+		
+//		try(FileInputStream fr = new FileInputStream("Read1.txt")){
+//			int a; 
+//			while((a = fr.read()) != -1) {
+//				System.out.print((char)a);
+//			}
+//			fr.close();
+//		}catch(FileNotFoundException e) {
+//			
+//		}catch(IOException e) {
+//			
+//		}
+		
+//		FileReader fr = new FileReader("Read1.txt"); 
+//		int a; 
+//		while((a = fr.read()) != -1) {
+//			System.out.print((char)a);
+//		}
+//		fr.close(); 
+		
+//		BufferedInputStream b = new BufferedInputStream(new FileInputStream("Read1.txt")); 
+//		int a; 
+//		System.out.println(b.available()); 
+//		while((a = b.read()) != -1) {
+//			System.out.print((char)a);
+//		}
+//		System.out.println();
+//		b.close(); 
+//		BufferedInputStream b1 = new BufferedInputStream(new FileInputStream("Read1.txt")); 
+//		byte[] arr = new byte[100]; 
+//		b1.read(arr , 10 , 35); 
+//		for(int i = 0  ; i < 100 ; i++) {
+//			System.out.print((char) arr[i]); 
+//		}
+//		System.out.println();
+//		System.out.println(b1.available()); 
+//		b1.close(); 
+		
+		
+//		Scanner scan = new Scanner(new FileReader("Read1.txt"));
+//		String ans = scan.nextLine(); 
+//		System.out.println(ans); 
+		
+		
+//		Byte d = new Byte((byte) 100); 
+//		System.out.println(d); 
+		
+//		A a  = new A(); 
+//		System.out.println(a); 
+		
+		
+		
+			
+		
 	}
 
 }

@@ -83,8 +83,12 @@ public class Mar20 {
 		// public static final- > var in interface
 		// interface can only extends another interface , it can not extend an class
 		
-//		Hyn aura = new Hyn(); 
-//		aura.run(); 
+		Hyn aura = new Hyn(); 
+		aura.run(); 
+		
+		City1 c = new City1();
+		c.print(); 
+		c.show(); 
 		
 		
 		

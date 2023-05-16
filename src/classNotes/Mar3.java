@@ -14,6 +14,9 @@ class Parent{
 	void display2() {
 		System.out.println("Display 2 for Parent"); 
 	}
+	void display4() {
+		System.out.println("Display 4 for Parent"); 
+	}
 	
 }
 
@@ -31,6 +34,9 @@ class Child extends Parent{
 		void display3() {
 			System.out.println("Display 3 for Child"); 
 		}
+		void display4() {
+			System.out.println("Display 4 for Child"); 
+		}
 }
 
 public class Mar3 {
@@ -43,13 +49,17 @@ public class Mar3 {
 		
 		Parent p = new Parent(); 
 		Child c = new Child(); 
+		Parent p2 = new Child(); 
 		
 		System.out.println(p.x);  // 2
 		System.out.println(c.x);  // 4
+		System.out.println(p2.x); // 2
 		
 		c.display();
-		c.display2();
+		//c.display2();
 		p.display();
+		p2.display(); // -> Not overriden
+		p2.display4();
 		// p.display3();	// ERROR -> Can not access child methods from parents.
 		
 		

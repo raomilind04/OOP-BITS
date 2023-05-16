@@ -1,5 +1,4 @@
 package classNotes;
-
 import java.lang.reflect.Modifier;
 
 
@@ -13,6 +12,9 @@ interface autocar31{
 interface Honda31 extends autocar31{
 	default void print() {
 		System.out.println("print in honda"); 
+	}
+	static void show() {
+		System.out.println("show in honda"); 
 	}
 }
 class City31 implements autocar31{
@@ -94,6 +96,7 @@ interface Honda313{
 	}
 	default void show() {
 		System.out.println("show in honda");
+		Autocar313.print(); 
 	}
 	interface Autocar313{
 		static void print() {
@@ -117,7 +120,7 @@ interface Honda313{
 //class City313 implements Honda313.Autocar313{
 //	public void display() {
 //		Honda313.display();
-//		//Honda313.Autocar313.super.print(); 
+//		Honda313.Autocar313.print(); 
 //		System.out.println("display in city");
 //	}
 //}
@@ -140,12 +143,14 @@ public class Mar31 {
 //		autocar31 car1; 
 //		car1 = c1; 
 //		car1.print();
+//		Honda31.show();  
 		
 		
-		City312 c1 = new City312(); 
-		c1.print(); 
-		c1.music(); 
-		c1.show(); 
+		
+//		City312 c1 = new City312(); 
+//		c1.print(); 
+//		c1.music(); 
+//		c1.show(); 
 		
 		
 		
@@ -197,9 +202,9 @@ public class Mar31 {
 		
 //		System.out.println("Static " + Modifier.isStatic(Honda313.Autocar313.class.getModifiers())); 
 //		System.out.println("Static " + Modifier.isStatic(Honda313.class.getModifiers())); 
-//		City313 c = new City313(); 
-//		c.display(); 
-//		//c.print(); 
+		City313 c = new City313(); 
+		c.display(); 
+		//c.print(); //-> Error
 //		c.show(); 
 		
 	}

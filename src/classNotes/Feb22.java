@@ -59,7 +59,6 @@ class A{
 	class B{
 		
 		// Both the static and non static members of the outter class can be directly accessed
-		// non static class can not have static members
 		// Static members of the outter class can not be accessed in a static block inside the non static inner class; 
 		
 		static int x1 = 100; 
@@ -115,6 +114,7 @@ public class Feb22 {
 		 
 		 A ob3 = new A(); 
 		 A.B ob4 = ob3. new B(); 
+		 ob1.disp();
 		 ob2.inc(); 
 		 ob2.disp();
 		 ob4.disp();

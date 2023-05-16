@@ -165,7 +165,8 @@ public class Apr26 {
 //		s.push(2); 
 //		System.out.println(s.isEmpty()); 
 //		System.out.println(s);
-//		s.pop(); 
+//		Object obj = s.pop();
+//		System.out.println(obj); 
 //		System.out.println(s); 
 //		s.push("Hi"); 	// NOT an Error
 //		System.out.println(s); 
@@ -178,7 +179,8 @@ public class Apr26 {
 //		s.push(2); 
 //		System.out.println(s.isEmpty()); 
 //		System.out.println(s);
-//		s.pop(); 
+//		Integer i = s.pop(); 
+//		System.out.println(i); 
 //		System.out.println(s); 
 		
 		// Code 3
